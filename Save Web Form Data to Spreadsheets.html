@@ -1,0 +1,163 @@
+
+<!-- saved from url=(0066)https://homechristmasdisplay.s3.us-west-2.amazonaws.com/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><style type="text/css">	
+
+body {
+	background-color: #ac1224;
+
+}
+			
+
+label {
+  	color: whitesmoke;
+ 	 padding: 7px;
+ 
+	box-sizing: border-box;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+	text-align: left;
+	font-size: 20px;
+	font-family: 'poppins';
+	font-weight: normal;
+	
+	
+}
+	
+	.body_text {
+	box-sizing: border-box;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	color: whitesmoke;
+	text-align: left;
+	font-size: 20px;
+	font-family: 'poppins';
+	font-weight: normal;
+}
+	
+
+	
+.white-title {
+	box-sizing: border-box;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+	text-align: left;
+	font-size: 30px;
+	font-family: 'kari-display-pro';
+}	
+
+.button-gold{
+	width: 200px;
+	cursor: pointer;
+	border-width: 2px 2px 1px 2px;
+	color: white;
+	font-size: 30px;
+	font-family: 'poppins';
+	font-weight: normal;
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, goldenrod 0, rgb(150, 115, 8) 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(242, 185, 13, .4) 0 2px 4px,rgba(242, 185, 13, .3) 0 7px 13px -3px,rgba(242, 185, 13, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  height: 40px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;	
+	}	
+.button-gold:focus {
+  box-shadow: #f2b90d 0 0 0 1.5px inset, rgba(242, 185, 13, .4) 0 2px 4px, rgba(242, 185, 13, .3) 0 7px 13px -3px, #f2b90d 0 -3px 0 inset;
+}
+
+.button-gold:hover {
+  box-shadow: rgba(242, 185, 13, .4) 0 4px 8px, rgba(242, 185, 13, .3) 0 7px 13px -3px, #f2b90d 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-gold:active {
+  box-shadow: #f2b90d 0 3px 7px inset;
+  transform: translateY(2px);
+}
+</style>	
+
+	
+
+	<title>Save Web Form Data to Spreadsheets</title>
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">	-->
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
+<script src="./Save Web Form Data to Spreadsheets_files/jquery-3.4.1.js.download" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/3ps7GwPBOwjQZQg2/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("The stockings were hung")
+					window.location.href="https://eastwood.remotefalcon.com/";
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
+</head>
+<body>
+	
+  <img src="./Save Web Form Data to Spreadsheets_files/lDiXtkp.png" style="width:100%; height: auto; margin: auto;"> 	
+  
+    <div class="body_text">List the first names of family and friends that you would like displayed. You can leave boxes blank.</div>
+  
+<br>
+<div class="label">
+	<form id="myForm">
+		<label>Name</label>
+		<input name="name1">
+		<br>
+		<label>Name</label>
+		<input name="name2">
+		<br>
+		<label>Name</label>
+		<input name="name3">
+		<br>
+		<label>Name</label>
+		<input name="name4">
+		<br>
+		<label>Name</label>
+		<input name="name5">
+		<br>
+		<label>Name</label>
+		<input name="name6">
+		<br>
+</form>
+</div>
+	<button onclick="SubForm()" class="button-gold">Submit</button>
+
+</body></html>
